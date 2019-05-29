@@ -1,0 +1,37 @@
+.badge-violet {
+    color: #fff;
+    background-color: BlueViolet;
+}
+
+.badge-orange {
+    color: #fff;
+    background-color: DarkGoldenRod;
+} 
+
+div.avatar {
+    /* cambia estos dos valores para definir el tamaño de tu círculo */
+    height: 40px;
+    width: 40px;
+    /* los siguientes valores son independientes del tamaño del círculo */
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    background-size: 100% auto;
+    display: inline-block;
+}
+
+.btn-editar{
+    padding-right: .5rem;
+    padding-left: .5rem;
+    border-radius: 10rem;
+
+    padding: .375rem .5rem;
+    font-size: 75%;
+    font-weight: 500;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    color: white;
+
+    line-height: 1;
+    display: inline-block;
+    background-color: goldenrod;
+}

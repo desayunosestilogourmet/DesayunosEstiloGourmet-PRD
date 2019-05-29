@@ -1,0 +1,59 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "4f2f7002640ef419eee85c7d9e0f8b95",
+    "packages": [
+        {
+            "name": "freshwork/transbank",
+            "version": "1.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/freshworkstudio/transbank-web-services.git",
+                "reference": "8db131fe4d2294b8465b742625f4432e2ce61b65"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/freshworkstudio/transbank-web-services/zipball/8db131fe4d2294b8465b742625f4432e2ce61b65",
+                "reference": "8db131fe4d2294b8465b742625f4432e2ce61b65",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "ext-openssl": "*",
+                "ext-soap": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Freshwork\\Transbank\\": "src/"
+                },
+                "classmap": [
+                    "src/wss"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Gonzalo De Spirito",
+                    "email": "gonzalo@freshworkstudio.com"
+                }
+            ],
+            "description": "SDK para webservices de transbank (Webpay Plus, Webpay OneClick, Webpay PatPass)",
+            "time": "2019-02-28T18:56:03+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

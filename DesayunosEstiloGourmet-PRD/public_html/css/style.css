@@ -1,0 +1,378 @@
+    /* ####################################################
+    :: Template Name: Essence - Fashion Ecommerce Template
+    :: Author: Colorlib
+    :: Author URL: https://colorlib.com
+    :: Description: Essence is smart & elegant fashion e-commerce Template. It's suitable for all e-commerce business platform.
+    :: Version: 1.0.0
+    :: Created: April 27, 2018
+    :: Last Updated: May 2, 2018
+    #################################################### */
+
+    /* ---------------------------------------
+    ##### - PLACE YOUR CUSTOM CSS HERE - #####
+    --------------------------------------- */
+
+/* CSS BOLA FLOTANTE CARRO DE COMPRA*/
+.sticky-container{
+    padding:0px;
+    margin:0px;
+    position:fixed;
+    right:-130px;
+    top:230px;
+    width:210px;
+    z-index: 1100;
+}
+.sticky li{
+    list-style-type:none;
+    color:#efefef;
+    height:43px;
+    padding:0px;
+    margin:0px 0px 1px 0px;
+    -webkit-transition:all 0.25s ease-in-out;
+    -moz-transition:all 0.25s ease-in-out;
+    -o-transition:all 0.25s ease-in-out;
+    transition:all 0.25s ease-in-out;
+    cursor:pointer;
+}
+
+.sticky li img{
+    float:left;
+    margin:-138px 4px;
+    margin-right:5px;
+}
+.sticky li p{
+    padding-top:5px;
+    margin:0px;
+    line-height:16px;
+    font-size:11px;
+}
+.sticky li p a{
+    text-decoration:none;
+    color:#2C3539;
+}
+
+#contador_carro{
+    margin-top: -150px;
+}
+
+/* CSS BOLA FLOTANTE CARRO DE COMPRA*/
+
+/*estilo del div de informacion del footer*/
+.info-cliente{
+    position: relative;
+    margin-left: auto;
+}
+
+#href-footer{
+    font-family: "helveticaneuemedium";
+    color: grey;  
+    font-size:16px;
+}
+/*estilo del div de informacion del footer*/
+
+/*margen de 25 para cuando sea necesario*/
+.mt-25{
+    margin-top: 25px;
+}
+/*margen de 25 para cuando sea necesario*/
+
+/*margen de 3 px a la izquierda*/
+.mr-18{
+    margin-right: 18px;
+}
+/*margen de 3 px a la izquierda*/
+
+
+/*margen de 20 a la izquierda para cuando sea necesario*/
+.ml-20{
+    margin-left: 20px;
+}
+/*margen de 20 a la izquierda para cuando sea necesario*/
+
+/*
+centra el contenido con respecto a la barra de categorias y el resto de la pantalla
+se usa en : informaciones.php
+*/
+.center-content{
+    margin-top: 25px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+/*centra el contenido con respecto a la barra de categorias y el resto de la pantalla*/
+
+/*href informaciones.php seccion contactanos*/
+#href-info{
+    font-family: "helveticaneuemedium";
+    color: #007bff;
+    font-size:16px;
+}
+/*href informaciones.php seccion contactanos*/
+
+/* CSS DEL TOOLTIP */
+.avatar {
+    height: 150px;
+    width: 150px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    /*border-radius: 50%;*/
+    background-size: 100% auto;
+    display: inline-block;
+}
+
+/* CSS DEL TOOLTIP*/    
+#tooltip {
+position: relative;
+display: inline-block;
+}
+
+#tooltip #tooltiptext {
+visibility: hidden;
+width: 220px;
+background-color: #555;
+color: #fff;
+text-align: center;
+border-radius: 6px;
+padding: 5px 0;
+position: absolute;
+z-index: 1;
+bottom: 125%;
+left: 50%;
+margin-left: -60px;
+opacity: 0;
+transition: opacity 0.3s;
+}
+
+#tooltip #tooltiptext::after {
+content: "";
+position: absolute;
+top: 100%;
+left: 50%;
+margin-left: -5px;
+border-width: 5px;
+border-style: solid;
+border-color: #555 transparent transparent transparent;
+}
+
+#tooltip:hover #tooltiptext {
+visibility: visible;
+opacity: 1;
+}
+/* CSS DEL TOOLTIP*/
+
+/*btn eliminar del carro*/
+.btn-eliminar-carro{
+    width: 120px;
+    margin-top: 5px;
+}
+/*btn eliminar del carro*/
+
+
+/* CSS DEL TOOLTIP BUTTON DISABLED*/    
+#tooltipBD {
+    position: relative;
+    display: inline-block;
+    /* border-bottom: 1px dotted black; */
+  }
+  
+  #tooltipBD #tooltiptextBD {
+    visibility: hidden;
+    width: 220px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 117%;
+    left: 32%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  #tooltipBD #tooltiptextBD::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #555 transparent;
+  }
+  
+  #tooltipBD:hover #tooltiptextBD {
+    visibility: visible;
+    opacity: 1;
+  }
+/* CSS DEL TOOLTIP BUTTON DISABLED*/
+
+/*CSS DE LA BARRA DE PROGRESO*/
+.progressbar {
+    counter-reset: step;
+}
+
+.progressbar li {
+    list-style-type: none;
+    width: 25%;
+    float: left;
+    font-size: 12px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    color: #7d7d7d;
+}
+.progressbar li:before {
+    width: 30px;
+    height: 30px;
+    content: counter(step);
+    counter-increment: step;
+    line-height: 30px;
+    border: 2px solid #7d7d7d;
+    display: block;
+    text-align: center;
+    margin: 0 auto 10px auto;
+    border-radius: 50%;
+    background-color: white;
+}
+.progressbar li:after {
+    width: 100%;
+    height: 2px;
+    content: '';
+    position: absolute;
+    background-color: #7d7d7d;
+    top: 15px;
+    left: -50%;
+    z-index: -1;
+}
+.progressbar li:first-child:after {
+    content: none;
+}
+.progressbar li.active {
+    color: green;
+}
+.progressbar li.active:before {
+    border-color: #55b776;
+}
+.progressbar li.active + li:after {
+    background-color: #55b776;
+}
+/*CSS DE LA BARRA DE PROGRESO*/
+
+/*CSS DEL BOTON SIGUIENTE PASO EN CART.PHP*/
+.amado2-btn2{
+    display: inline-block;
+    min-width: 160px;
+    height: 55px;
+    color: #ffffff;
+    border: none;
+    border-radius: 0;
+    padding: 0 7px;
+    font-size: 18px;
+    line-height: 56px;
+    background-color: #fbb710;
+    font-weight: 400;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.w-110{
+    width: 100%!important;
+}
+
+.amado2-btn2:hover{
+    background-color: black;
+    color:#ffffff;
+   
+}
+/*CSS DEL BOTON SIGUIENTE PASO EN CART.PHP*/
+
+/*color del boton ver detalle*/
+.btn-detalle{
+    background-color:#0fcfc4;
+    color: white;
+}
+/*color del boton ver detalle*/
+
+/*cursiva para los titulos*/
+.titulo-cursivo{
+    font-style: italic;
+}
+
+/*crusiva para los titulos*/
+
+
+/*media queries y css para el footer y el contenido de los productos*/
+.avatar-footer {
+    height: 150px;
+    width: 150px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    background-size: 100% auto;
+    display: inline-block;
+    background-color: white;
+}
+
+.img-footer{
+    width: 130px;
+    margin-left: 11px;
+    margin-top: 16px;
+}
+
+@media screen and (min-width: 320px) {
+    .resolucion-img-footer{margin-left: 68px;}
+    .centrado-card{margin-left: -7px;}
+    .centrado-paginador{margin-left: 15px;}
+    .centrado-filtro{margin-left: 17px;}
+}
+
+@media screen and (min-width: 375px) {
+    .resolucion-img-footer{margin-left: 94px;}
+    .centrado-card{margin-left: 20px;}
+    .centrado-paginador{margin-left: 42px;}
+    .centrado-filtro{margin-left: 44px;}
+}
+
+@media screen and (min-width: 425px) {
+    .resolucion-img-footer{margin-left: 122px;}
+    .centrado-card{margin-left: 45px;}
+    .centrado-paginador{margin-left: 62px;}
+    .centrado-filtro{margin-left: 60px;}
+}
+
+@media screen and (min-width: 768px) {
+    .resolucion-img-footer{margin-left: 266px;}
+    .centrado-card{margin-left: 92px;}
+    .centrado-paginador{margin-left: 382px;}
+    .centrado-filtro{margin-left: 60px;}
+}
+
+@media screen and (min-width: 1024px) {
+    .resolucion-img-footer{margin-left: 152px;}
+    .centrado-card{margin-left: 22px;}
+    /* .centrado-paginador{margin-right: 198px;} */
+    .centrado-paginador{margin-left: 354px;}
+    .centrado-filtro{margin-left: 37px;}
+}
+
+@media screen and (min-width: 1366px) {
+    .centrado-paginador{margin-right: 360px;}
+}
+
+/*no mas de 1600 y menor a 1440*/
+@media (max-width: 1600px) and (min-width: 1440px){
+    /* .centrado-paginador{margin-right: 412px;} */
+    .centrado-paginador{margin-left: 358px;}
+    .centrado-filtro{margin-left: 37px;}
+}
+/*media queries y css para el footer y el contenido de los productos*/
+
+/*deshabilitar li paginador*/
+.disabled {
+    pointer-events:none;
+    opacity:0.6;
+}
+/*deshabilitar li paginador*/
